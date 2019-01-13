@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc32717-870a-48f0-b967-d89a66c0d585" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="5cc32717-870a-48f0-b967-d89a66c0d585" name="Default" comment="" />
     <ignored path="Practice.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,16 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="WordLadder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problems/WordLadder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3743">
-              <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problems/Test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,8 +78,8 @@
       <file leaf-file-name="RangeSumQuery.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problems/Google/RangeSumQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+            <state relative-caret-position="-133">
+              <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
               <folding>
                 <element signature="e#923#924#0" expanded="true" />
                 <element signature="e#950#951#0" expanded="true" />
@@ -109,7 +97,7 @@
       <file leaf-file-name="SplitArrayIntoConsecutiveSubSequences.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problems/Google/SplitArrayIntoConsecutiveSubSequences.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
+            <state relative-caret-position="1406">
               <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -118,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseSchedule.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CourseSchedule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problems/Google/CourseSchedule.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="494">
@@ -128,6 +116,16 @@
                 <element signature="e#1241#1250#0" expanded="true" />
                 <element signature="e#1297#1306#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SplitArrayLargestSum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problems/Google/SplitArrayLargestSum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Problems/ValidTraingleNumber.java" />
         <option value="$PROJECT_DIR$/src/Problems/FactorCombinations.java" />
         <option value="$PROJECT_DIR$/src/Problems/UnionAndIntersection.java" />
         <option value="$PROJECT_DIR$/src/Problems/Tree/BSTIterator.java" />
@@ -213,6 +210,7 @@
         <option value="$PROJECT_DIR$/src/Problems/Google/SplitArrayIntoConsecutiveSubSequences.java" />
         <option value="$PROJECT_DIR$/src/Problems/CommonTechniques/DetectCycleInDirectedGraph.java" />
         <option value="$PROJECT_DIR$/src/Problems/Google/CourseSchedule.java" />
+        <option value="$PROJECT_DIR$/src/Problems/Google/SplitArrayLargestSum.java" />
       </list>
     </option>
   </component>
@@ -412,27 +410,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/eclipseWorkspace/CommonTechniques" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Application.CourseSchedule">
-    <configuration default="false" name="SurroundedRegions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Problems.Google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Problems.Google.SurroundedRegions" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Practice" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.SplitArrayLargestSum">
     <configuration default="false" name="RangeSumQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -501,6 +479,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Problems.CommonTechniques.DetectCycleInDirectedGraph" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Practice" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SplitArrayLargestSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Problems.Google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Problems.Google.SplitArrayLargestSum" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -758,19 +756,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.SurroundedRegions" />
-      <item index="1" class="java.lang.String" itemvalue="Application.RangeSumQuery" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SplitArrayIntoConsecutiveSubSequences" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CourseSchedule" />
-      <item index="4" class="java.lang.String" itemvalue="Application.DetectCycleInDirectedGraph" />
+      <item index="0" class="java.lang.String" itemvalue="Application.RangeSumQuery" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SplitArrayIntoConsecutiveSubSequences" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CourseSchedule" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DetectCycleInDirectedGraph" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SplitArrayLargestSum" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CourseSchedule" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DetectCycleInDirectedGraph" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SplitArrayIntoConsecutiveSubSequences" />
-        <item index="3" class="java.lang.String" itemvalue="Application.RangeSumQuery" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SurroundedRegions" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SplitArrayLargestSum" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CourseSchedule" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DetectCycleInDirectedGraph" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SplitArrayIntoConsecutiveSubSequences" />
+        <item index="4" class="java.lang.String" itemvalue="Application.RangeSumQuery" />
       </list>
     </recent_temporary>
   </component>
@@ -839,13 +837,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Problems/ExclusiveTimeOfFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problems/FactorCombinations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -1205,33 +1196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Problems/Google/RangeSumQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
-          <folding>
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Problems/Google/SplitArrayIntoConsecutiveSubSequences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problems/CommonTechniques/DetectCycleInDirectedGraph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-224">
@@ -1249,6 +1213,41 @@
             <element signature="e#1241#1250#0" expanded="true" />
             <element signature="e#1297#1306#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problems/Google/RangeSumQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <folding>
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+            <element signature="e#2142#2143#0" expanded="true" />
+            <element signature="e#2185#2186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problems/Google/SplitArrayIntoConsecutiveSubSequences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problems/Google/SplitArrayLargestSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
