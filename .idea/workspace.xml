@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc32717-870a-48f0-b967-d89a66c0d585" name="Default" comment="" />
+    <list default="true" id="5cc32717-870a-48f0-b967-d89a66c0d585" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Practice.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,30 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="RedundantConnectionII.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problems/Google/RedundantConnectionII.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1387">
-              <caret line="76" column="49" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedundantInBST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problems/Google/RedundantInBST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WordLadder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problems/WordLadder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="-3743">
               <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
               <folding />
             </state>
@@ -124,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SplitArrayIntoConsecutiveSubSequences.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SplitArrayIntoConsecutiveSubSequences.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problems/Google/SplitArrayIntoConsecutiveSubSequences.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="422">
@@ -132,6 +114,30 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseSchedule.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problems/Google/CourseSchedule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1241#1250#0" expanded="true" />
+                <element signature="e#1297#1306#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DetectCycleInDirectedGraph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Problems/CommonTechniques/DetectCycleInDirectedGraph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-224">
+              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,6 +151,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -153,8 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Problems/NestedListWeightSum.java" />
-        <option value="$PROJECT_DIR$/src/Problems/ExclusiveTimeOfFunctions.java" />
         <option value="$PROJECT_DIR$/src/Problems/ValidTraingleNumber.java" />
         <option value="$PROJECT_DIR$/src/Problems/FactorCombinations.java" />
         <option value="$PROJECT_DIR$/src/Problems/UnionAndIntersection.java" />
@@ -204,6 +211,8 @@
         <option value="$PROJECT_DIR$/src/Problems/Google/SurroundedRegions.java" />
         <option value="$PROJECT_DIR$/src/Problems/Google/RangeSumQuery.java" />
         <option value="$PROJECT_DIR$/src/Problems/Google/SplitArrayIntoConsecutiveSubSequences.java" />
+        <option value="$PROJECT_DIR$/src/Problems/CommonTechniques/DetectCycleInDirectedGraph.java" />
+        <option value="$PROJECT_DIR$/src/Problems/Google/CourseSchedule.java" />
       </list>
     </option>
   </component>
@@ -388,12 +397,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Google" />
+              <option name="myItemId" value="CommonTechniques" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RangeSumQuery.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -404,50 +409,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/eclipseWorkspace" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/eclipseWorkspace/CommonTechniques" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Application.SplitArrayIntoConsecutiveSubSequences">
-    <configuration default="false" name="UniquePath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Problems.Google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Problems.Google.UniquePath" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Practice" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="SearchIndexInBT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Problems.Google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Problems.Google.SearchIndexInBT" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Practice" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.CourseSchedule">
     <configuration default="false" name="SurroundedRegions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -496,6 +461,46 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Problems.Google.SplitArrayIntoConsecutiveSubSequences" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Practice" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CourseSchedule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Problems.Google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Problems.Google.CourseSchedule" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Practice" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DetectCycleInDirectedGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Problems.CommonTechniques.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Problems.CommonTechniques.DetectCycleInDirectedGraph" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -753,19 +758,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.UniquePath" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SearchIndexInBT" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SurroundedRegions" />
-      <item index="3" class="java.lang.String" itemvalue="Application.RangeSumQuery" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SplitArrayIntoConsecutiveSubSequences" />
+      <item index="0" class="java.lang.String" itemvalue="Application.SurroundedRegions" />
+      <item index="1" class="java.lang.String" itemvalue="Application.RangeSumQuery" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SplitArrayIntoConsecutiveSubSequences" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CourseSchedule" />
+      <item index="4" class="java.lang.String" itemvalue="Application.DetectCycleInDirectedGraph" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SplitArrayIntoConsecutiveSubSequences" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RangeSumQuery" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SurroundedRegions" />
-        <item index="3" class="java.lang.String" itemvalue="Application.SearchIndexInBT" />
-        <item index="4" class="java.lang.String" itemvalue="Application.UniquePath" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CourseSchedule" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DetectCycleInDirectedGraph" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SplitArrayIntoConsecutiveSubSequences" />
+        <item index="3" class="java.lang.String" itemvalue="Application.RangeSumQuery" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SurroundedRegions" />
       </list>
     </recent_temporary>
   </component>
@@ -834,20 +839,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Problems/Tree/FindLeaves.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Problems/DistinctPairs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problems/ExclusiveTimeOfFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -957,6 +948,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,7 +1155,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problems/WordLadder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="-3743">
           <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
           <folding />
         </state>
@@ -1236,6 +1228,26 @@
           <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problems/CommonTechniques/DetectCycleInDirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problems/Google/CourseSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1241#1250#0" expanded="true" />
+            <element signature="e#1297#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
