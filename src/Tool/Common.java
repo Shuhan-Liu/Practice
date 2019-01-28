@@ -10,6 +10,40 @@ import java.util.*;
  */
 public class Common {
 
+    public static int myBinarySearch1(int[] arr, int target){
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left)/2;
+            if (arr[mid] == target) {
+                return mid;
+            } else if (arr[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return left;
+    }
+
+    public static int myBinarySearch2(int[] arr, int target){
+        int left = 0;
+        int right = arr.length;
+
+        while (left < right) {
+            int mid = left + (right - left)/2;
+            if (arr[mid] == target) {
+                return mid;
+            } else if (arr[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return left;
+    }
+
     public static void printArr(int[] arr) {
         for(Integer i : arr) {
             System.out.print(i + " ");
