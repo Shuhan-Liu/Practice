@@ -3,6 +3,10 @@ package Problems.Google;
 import Tool.Parser;
 import Tool.Printer;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 /**
  * Created by shuhanliu on 2/5/19.
  *
@@ -21,11 +25,13 @@ public class MoveStonesUFWIthRankPathCompression {
         int[] rank;
         int n;
         int count;
+        Stack<Integer> sequence;
 
         UnionFind (int n){
             parent = new int[n];
             rank = new int[n];
             count = n;
+            sequence = new Stack<>();
             this.n = n;
             for (int i = 0; i < n; i++) {
                 parent[i] = i;
@@ -54,6 +60,8 @@ public class MoveStonesUFWIthRankPathCompression {
                 // always attach the tree
                 // with lower height to the
                 // tree with higher height
+                sequence.push(y);
+
                 if (rank[xp] > rank[yp]) {
                     parent[yp] = xp;
                 } else if (rank[xp] < rank[yp]) {
@@ -68,6 +76,21 @@ public class MoveStonesUFWIthRankPathCompression {
 
         int getConnectedComponentsCount() {
             return count;
+        }
+
+        List<Integer> getSequence() {
+            List<Integer> rtn = new ArrayList<>();
+            Stack<Integer> tmp = new Stack<>();
+            while (!sequence.isEmpty()) {
+                Integer i = sequence.pop();
+                rtn.add(new Integer(i));
+                tmp.push(i);
+            }
+
+            while (!tmp.isEmpty()) {
+                sequence.push(tmp.pop());
+            }
+            return rtn;
         }
     }
 
@@ -90,6 +113,8 @@ public class MoveStonesUFWIthRankPathCompression {
                 }
             }
         }
+        System.out.println("Stone remove sequence:");
+        Printer.printList(uf.getSequence());
         return stones.length - uf.getConnectedComponentsCount();
     }
 }
