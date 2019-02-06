@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc32717-870a-48f0-b967-d89a66c0d585" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problems/Google/MoveStones.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problems/Google/MoveStonesUFWIthRankPathCompression.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problems/Google/SnakeGameTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problems/Phone/AddTwoIntegers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Practice/Tool/Parser.class" afterPath="$PROJECT_DIR$/out/production/Practice/Tool/Parser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tool/Parser.java" afterPath="$PROJECT_DIR$/src/Tool/Parser.java" />
-    </list>
+    <list default="true" id="5cc32717-870a-48f0-b967-d89a66c0d585" name="Default" comment="" />
     <ignored path="Practice.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
