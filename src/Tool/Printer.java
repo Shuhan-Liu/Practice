@@ -14,23 +14,25 @@ public class Printer {
     }
 
     public static <T> void printArr(T[] arr) {
+        System.out.print("[");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]);
             if (i != arr.length-1) {
                 System.out.print(", ");
             }
         }
-        System.out.println();
+        System.out.println("]");
     }
 
     public static <T> void printArrTab(T[] arr) {
+        System.out.print("[");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]);
             if (i != arr.length-1) {
                 System.out.print(",\t");
             }
         }
-        System.out.println();
+        System.out.println("]");
     }
 
     public static void printArr(int[] arr) {
@@ -61,13 +63,46 @@ public class Printer {
         }
     }
 
-    public static void print2DArray(int[][] arr) {
-        for (int[] a : arr) {
-            for (int i : a) {
-                System.out.print(i + " ");
+    public static <T> void print2DArray(T[][] arr) {
+        System.out.print("[");
+
+        for (int i = 0; i < arr.length; i++) {
+            T[] a = arr[i];
+            System.out.print("[");
+            for (T n : a) {
+                System.out.print(n + " ");
             }
-            System.out.println();
+            if (i != arr.length-1)
+                System.out.println("]");
+            else
+                System.out.println("]]");
         }
+    }
+
+    public static void print2DArray(boolean[][] arr) {
+        print2DArray(Arrays.stream(arr).toArray(Integer[][]::new));
+//        Arrays.stream(arr).map(row -> .of(row).boxed()).toArray(Integer[][]::new);
+    }
+
+    public static void print2DArray(int[][] arr) {
+//        System.out.print("[");
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            int[] a = arr[i];
+//            System.out.print("[");
+//            for (int n : a) {
+//                System.out.print(n + " ");
+//            }
+//            if (i != arr.length-1)
+//                System.out.println("]");
+//            else
+//                System.out.println("]]");
+//
+//        }
+
+        print2DArray(Arrays.stream(arr).toArray(Integer[][]::new));
+
+//        print2DArray(Arrays.stream(arr).boxed().toArray( Integer[]::new ));
     }
 
     public static <T, E> void printMap(Map<T, E> map) {
