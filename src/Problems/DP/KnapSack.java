@@ -33,16 +33,6 @@ public class KnapSack {
         Printer.printResult(knapSackMax(values, weights, W));
     }
 
-//    class Node{
-//        int wSum;
-//        int vSum;
-//
-//        Node(int wSum, int vSum) {
-//            this.wSum = wSum;
-//            this.vSum = vSum;
-//        }
-//    }
-
     public static int knapSackMax(int[] values, int[] weights, int W) {
 
         int len = weights.length;
