@@ -50,14 +50,7 @@ public class SubsetSum {
             }
         }
 
-//        Printer.print2DArray(dp);
-
-        for (boolean[] row : dp) {
-            for (boolean cell : row) {
-                System.out.print(cell + "\t");
-            }
-            System.out.println();
-        }
+        Printer.print2DArray(dp);
 
         return dp[len][sum];
     }

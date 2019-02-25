@@ -80,29 +80,37 @@ public class Printer {
     }
 
     public static void print2DArray(boolean[][] arr) {
-        print2DArray(Arrays.stream(arr).toArray(Integer[][]::new));
-//        Arrays.stream(arr).map(row -> .of(row).boxed()).toArray(Integer[][]::new);
+        System.out.print("[");
+
+        for (int i = 0; i < arr.length; i++) {
+            boolean[] a = arr[i];
+            System.out.print("[");
+            for (boolean n : a) {
+                System.out.print(n + "\t");
+            }
+            if (i != arr.length-1)
+                System.out.println("]");
+            else
+                System.out.println("]]");
+
+        }
     }
 
     public static void print2DArray(int[][] arr) {
-//        System.out.print("[");
-//
-//        for (int i = 0; i < arr.length; i++) {
-//            int[] a = arr[i];
-//            System.out.print("[");
-//            for (int n : a) {
-//                System.out.print(n + " ");
-//            }
-//            if (i != arr.length-1)
-//                System.out.println("]");
-//            else
-//                System.out.println("]]");
-//
-//        }
+        System.out.print("[");
 
-        print2DArray(Arrays.stream(arr).toArray(Integer[][]::new));
+        for (int i = 0; i < arr.length; i++) {
+            int[] a = arr[i];
+            System.out.print("[");
+            for (int n : a) {
+                System.out.print(n + " ");
+            }
+            if (i != arr.length-1)
+                System.out.println("]");
+            else
+                System.out.println("]]");
 
-//        print2DArray(Arrays.stream(arr).boxed().toArray( Integer[]::new ));
+        }
     }
 
     public static <T, E> void printMap(Map<T, E> map) {
