@@ -30,8 +30,8 @@ public class MoveStonesUFWIthRankPathCompression {
         UnionFind (int n){
             parent = new int[n];
             rank = new int[n];
-            count = n;
-            sequence = new Stack<>();
+            count = n;  // use to track number of connected components
+            sequence = new Stack<>();   // use to keep the sequence to remove stones
             this.n = n;
             for (int i = 0; i < n; i++) {
                 parent[i] = i;

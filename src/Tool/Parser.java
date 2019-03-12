@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class Parser {
     public static int[][] parse2dArrayFromString(String s) {
-
+        s = s.replaceAll("\\s+","");
         String tmp = s.substring(2, s.length()-2);
         String[] arr = tmp.split("\\],\\[");
         int m = arr.length;

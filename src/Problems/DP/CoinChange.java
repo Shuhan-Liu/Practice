@@ -1,5 +1,7 @@
 package Problems.DP;
 
+import Tool.Printer;
+
 /**
  * Created by shuhanliu on 10/7/18.
  */
@@ -51,10 +53,39 @@ public class CoinChange {
         }
         return min[amount] < Integer.MAX_VALUE ? min[amount] : -1;
     }
+    
+    // find the number of ways to get the change with coins
+    public static int coinChangeDP(int[] coins, int amount) {
+        
+        if (amount <= 0)
+            return 0;
+        if (coins.length == 0)
+            return -1;
+        
+        int[] ways = new int[amount + 1];
+        ways[0] = 1;
+
+//        for (int i = 1; i <= amount; i++) {
+//            for (int j = 0; j < coins.length; j++) {
+//                if (i - coins[j] >= 0)
+//                    ways[i] += ways[i-coins[j]];
+//            }
+//        }
+
+        for (int j = 0; j < coins.length; j++) {
+            for (int i = coins[j]; i <= amount; i++) {
+                ways[i] += ways[i - coins[j]];
+            }
+        }
+
+        Printer.printArr(ways);
+        return ways[amount];
+    }
 
     public static void main (String[] args) {
         int[] coins = {1, 2, 5};
-        int amount = 11;
+        int amount = 5;
         System.out.println(coinChangeIterative(coins, amount));
+        Printer.printResult(coinChangeDP(coins, amount));
     }
 }
