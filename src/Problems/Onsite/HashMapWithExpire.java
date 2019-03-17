@@ -30,6 +30,7 @@ public class HashMapWithExpire {
         System.out.println(expireMap.get(0));
         Thread.sleep(500L);
         System.out.println(expireMap.get(0));
+        expireMap.release();
     }
 
     static class ExpireMap<K, V> {
@@ -78,6 +79,16 @@ public class HashMapWithExpire {
             Long curTime = System.currentTimeMillis();
             valueMap.put(key, value);
             timeMap.put(key, curTime + expireIn);
+        }
+
+        public void release() {
+            try {
+                cleanThread.join();
+                cleanThread.stop();
+                System.out.println("Thread is released");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 }
