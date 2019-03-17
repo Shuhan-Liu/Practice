@@ -30,6 +30,14 @@ import java.util.*;
  * How many car fleets will arrive at the destination?
  *
  */
+
+/**
+ * 思路：
+ *
+ * store with pq, and scan from closest to target to furthest from target.
+ * merge two cars that will finally meet before target
+ *
+ * */
 public class CarFleet {
 
     static class Car{
