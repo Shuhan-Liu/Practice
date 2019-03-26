@@ -1,4 +1,4 @@
-package Problems.Onsite;
+package Problems.Onsite.UnionFind;
 
 import Structure.TreeNode;
 import Tool.Printer;
@@ -17,6 +17,25 @@ import Tool.Printer;
  */
 public class RedundantConnectionFollowUp {
 
+    public static TreeNode deleteRedundantEdgeInBSTPractice(TreeNode root) {
+        return deleteRedundantEdgeInBSTPractice(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    public static TreeNode deleteRedundantEdgeInBSTPractice(TreeNode root, int min, int max) {
+        if (root == null)
+            return root;
+
+        if (root.val >= max || root.val <= min) {
+            System.out.println("DELETEING root: " + root.val + " min: " + min + " max: " + max);
+            return null;
+        }
+
+        root.left = deleteRedundantEdgeInBSTPractice(root.left, min, root.val);
+        root.right = deleteRedundantEdgeInBSTPractice(root.right, root.val, max);
+
+        return root;
+    }
+
     public static void main(String[] args) {
         TreeNode root = new TreeNode(7);
         root.left = new TreeNode(5);
@@ -25,7 +44,8 @@ public class RedundantConnectionFollowUp {
         root.left.right = new TreeNode(8);
         root.right.left = root.left.right;
 
-        deleteRedundantEdgeInBST(root);
+//        deleteRedundantEdgeInBST(root);
+        deleteRedundantEdgeInBSTPractice(root);
         Printer.printResult(root.left.right == null);
     }
 

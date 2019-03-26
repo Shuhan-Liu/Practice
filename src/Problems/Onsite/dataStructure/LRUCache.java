@@ -1,4 +1,4 @@
-package Problems.Onsite;
+package Problems.Onsite.dataStructure;
 
 import java.util.*;
 

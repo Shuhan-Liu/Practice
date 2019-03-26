@@ -1,4 +1,4 @@
-package Problems.Onsite;
+package Problems.Onsite.UnionFind;
 
 import Tool.Parser;
 import Tool.Printer;
@@ -48,15 +48,72 @@ import java.util.*;
  */
 public class RedundantConnectionII {
 
+    public static int[] findRedundantDirectedConnectionPracticeAgain(int[][] edges) {
+
+        Map<Integer, Integer> map = new HashMap<>();
+        int[] parent = new int[edges.length+1];
+        int[] firstEdge = null;
+        int[] secondEdge = null;
+
+        for (int i = 0; i < parent.length; i++) {
+            parent[i] = i;
+        }
+
+        for (int[] edge : edges) {
+            if (map.containsKey(edge[1])) {
+                firstEdge = new int[]{map.get(edge[1]), edge[1]};
+                secondEdge = edge;
+                break;
+            } else {
+                map.put(edge[1], edge[0]);
+            }
+        }
+
+        System.out.println("FIRST AND SECOND EDGES: ");
+        Printer.printArr(firstEdge);
+        Printer.printArr(secondEdge);
+
+        for (int[] edge : edges) {
+            if (secondEdge != null && secondEdge[0] == edge[0] && secondEdge[1] == edge[1])
+                continue;
+
+            int px = findWithPathCompressionPracticeAgain(parent, edge[0]);
+            int py = findWithPathCompressionPracticeAgain(parent, edge[1]);
+
+            if (px == py) {
+                if (firstEdge != null)
+                    return firstEdge;
+                else
+                    return edge;
+            }
+
+            parent[py] = px;
+        }
+
+
+        return secondEdge;
+    }
+
+    public static int findWithPathCompressionPracticeAgain(int[] parent, int x) {
+        if (parent[x] != x) {
+            parent[x] = findWithPathCompressionPracticeAgain(parent, parent[x]);
+        }
+        return parent[x];
+    }
+
     public static void main(String[] args) {
 //        String s = "[[1,2], [2,3], [3,4], [4,1], [1,5]]";
 //        String s = "[[1,2],[1,3],[2,3]]";
 //        String s = "[[1,2],[3,1],[2,3]]";
 //        String s = "[[2,1],[3,1],[4,2],[1,4]]";
-        String s = "[[1,2],[2,3],[4,1],[3,1]]";
+//        String s = "[[1,2],[2,3],[4,1],[3,1]]";
+//        String s = "[[2,1],[3,1],[4,2],[1,4]]";
+        String s ="[[5,2],[5,1],[3,1],[3,4],[3,5]]";
 
         int[][] edges = Parser.parse2dArrayFromString(s);
+
         Printer.printArr(findRedundantDirectedConnection(edges));
+        Printer.printArr(findRedundantDirectedConnectionPracticeAgain(edges));
     }
 
     // why this is different than just detecting cycles in directed graph?
@@ -80,6 +137,10 @@ public class RedundantConnectionII {
                 map.put(edge[1], edge);
             }
         }
+
+        System.out.println("FIRST AND SECOND EDGES: ");
+        Printer.printArr(firstEdge);
+        Printer.printArr(secondEdge);
 
         int[] parent = new int[edges.length+1];
         for (int i = 0; i < parent.length; i++) {

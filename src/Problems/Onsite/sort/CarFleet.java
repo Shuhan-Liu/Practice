@@ -1,4 +1,4 @@
-package Problems.Onsite;
+package Problems.Onsite.sort;
 
 import Tool.Printer;
 

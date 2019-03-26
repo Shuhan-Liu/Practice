@@ -1,4 +1,4 @@
-package Problems.Onsite;
+package Problems.Onsite.UnionFind;
 
 import Tool.Parser;
 import Tool.Printer;
@@ -66,7 +66,7 @@ public class RedundantConnection {
             int yParent = findWithPathCompression(parent, edge[1]);
 
             if (xParent == yParent) {
-                int[] rtn = {edge[0], edge[1]};
+                int[] rtn = new int[]{edge[0], edge[1]};
                 return rtn;
             }
 

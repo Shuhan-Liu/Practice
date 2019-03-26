@@ -1,4 +1,4 @@
-package Problems.Onsite;
+package Problems.Onsite.dataStructure;
 
 import Tool.Printer;
 
@@ -18,10 +18,52 @@ import java.util.*;
  */
 public class WordPatternMatch {
 
+    public static boolean matchPattern(String word, String pattern) {
+
+        if (word == null && pattern == null)
+            return true;
+        if (word == null || pattern == null)
+            return false;
+        if (word.length() != pattern.length())
+            return false;
+
+        Map<Character, Character> map1 = new HashMap<>();
+        Map<Character, Character> map2 = new HashMap<>();
+
+        for (int i = 0; i < word.length(); i++) {
+            char w = word.charAt(i);
+            char p = pattern.charAt(i);
+
+            if (map1.containsKey(w) && map1.get(w) != p)
+                return false;
+            if (map2.containsKey(p) && map2.get(p) != w)
+                return false;
+            map1.put(w, p);
+            map2.put(p, w);
+        }
+
+        return true;
+    }
+
+    public static List<String> findAndReplacePatternPracticeAgain(String[] words, String pattern) {
+        List<String> rtn = new ArrayList<>();
+
+        if (words.length == 0)
+            return rtn;
+
+        for (String word : words) {
+            if (matchPattern(word, pattern))
+                rtn.add(word);
+        }
+
+        return rtn;
+    }
+
     public static void main(String[] args) {
         String[] words = {"abc","deq","mee","aqq","dkd","ccc"};
         String pattern = "abb";
         Printer.printList(findAndReplacePattern(words, pattern));
+        Printer.printList(findAndReplacePatternPracticeAgain(words, pattern));
     }
 
     public static List<String> findAndReplacePattern(String[] words, String pattern) {

@@ -1,4 +1,4 @@
-package Problems.Onsite;
+package Problems.Onsite.dataStructure;
 
 import java.util.*;
 
@@ -8,9 +8,9 @@ import java.util.*;
  * LC855 考试找位子，尽量分散坐，人会离开
  *
  * 思路：见leetcode
- * 
+ *
  * 1.用优先队列：用优先队列存slot，slot包含左右端点和长度。exclusive好算。
- * 注意如果是最左或最右时长度为right - left，若非则为(right - left) /
+ * 注意如果是最左或最右时长度为right - left，若非则为(right - left) / 2
  *
  * 2，因为如果选择坐边上可以不管端点。seat时候去pq最大slot，中间切开offer两段。
  * leave时候遍历找到左右两段整合
