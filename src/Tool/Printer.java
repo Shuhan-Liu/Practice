@@ -36,6 +36,10 @@ public class Printer {
     }
 
     public static void printArr(int[] arr) {
+        if (arr == null) {
+            System.out.println("null");
+            return;
+        }
         printArr(Arrays.stream(arr).boxed().toArray( Integer[]::new ));
     }
 
@@ -97,7 +101,7 @@ public class Printer {
     }
 
     public static void print2DArray(int[][] arr) {
-        System.out.print("[");
+        System.out.println("[");
 
         for (int i = 0; i < arr.length; i++) {
             int[] a = arr[i];
@@ -131,5 +135,16 @@ public class Printer {
         int rightH = getHeight(root.right);
 
         return 1 + Math.max(leftH, rightH);
+    }
+
+    public static void printTimeUsed(long startMilli, long endMilli, Unit unit) {
+        long diff = endMilli - startMilli;
+
+        if (unit == Unit.SECONDS) {
+            diff = diff / 1000;
+            System.out.println("Time used: " + diff + " seconds");
+        } else {
+            System.out.println("Time used: " + diff + " milliseconds");
+        }
     }
 }
